@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthy Body - Cotización</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/estiloscotizacion.css">
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Gimnasio Healthy Body</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__nit">
+                <span class="">NIT 800528624-1</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="Servicios.html" class="menu__link">Servicios de Entrenamiento</a></li>
+                <li class="menu__item"><a href="Clases.html" class="menu__link">Clases</a></li>
+                <li class="menu__item"><a href="Planes.html" class="menu__link">Planes</a></li>
+                <li class="menu__item"><a href="Convenios.html" class="menu__link">Convenios Corporativos</a></li>
+                <li class="menu__item"><a href="Cotizar.html" class="menu__link menu__link--select">Cotización</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-whatsapp"></span></a>
+            </div>
+        </div>
+    </nav>
+    
+     <section class="banner">
+        <img src="imagenes/banner_cotizacion.jpg" alt="" class="banner__img">
+        <div class="banner__content">Realiza tu cotización y empieza a mejorar tu vida.</div>
+    </section>
+    
+    <main class="main">
+        
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Bienvenido a su gimnasio </h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia iusto exercitationem consectetur debitis excepturi placeat ab, quidem repudiandae veritatis quas dolore praesentium ratione voluptatibus, est quae, rerum suscipit molestias.</p>
+            </div>
+        </section>
+        
+        <section class="sucursal">
+           <div class="vista">
+               <h4 class="titulo-sucursal">Nuestras sucursales </h4>
+                   <ul class="menul" id="menulateral">
+                        <li><a href="bogota.html" >Bogotá</a></li>
+                        <li><a href="medellin.html">Medellín</a></li>
+                        <li><a href="cali.html">Calí</a></li>
+                        <li><a href="barranquilla.html">Barranquilla</a></li>
+                        <li><a href="cartagena.html">Cartagena</a></li>
+                        <li><a href="yopal.html">Yopal</a></li>
+                        <li><a href="Cotizar.html">Cotización</a></li>
+                    </ul>
+           </div>
+       </section>
+       
+       <section class="creador">
+           <div class="vistal">
+              <div class="container foto">
+                  <img src="imagenes/dio.jpg" alt="" class="img__creador">
+              </div>
+               <h4 class="titulo-creador">Integrantes del proyecto</h4>
+                  <p>
+                      Diomedes Palacio Palacio
+                      Skype diome.pala
+                      Correo diome.pala@gmail.com
+                      Celular 3176796816
+                      Estudiante en
+                      Tecnología en Desarrollo de Software
+                      Finalizando carrera
+                  </p>
+           </div>
+       </section>
+         
+    <section>      
+    <div class="container_form">
+
+		
+		<h1>Cotiza el plan que más te convenga</h1><br>
+
+		
+		<form action="calcular.php" method="POST">
+		
+        <h3>Dejanos conocerte, ingresa tu nombre</h3> <br><br>
+			<input class="nom" type="text" name="nombre"><br><br>
+        
+        <h3>Indicanos la sucursal</h3><br>
+			<select class="duracion" name="sucursal">
+			    <option value="seleccion">Seleccione...</option>
+				<option value="Bogota">Bogotá</option>
+				<option value="Barranquilla">Barranquilla</option>
+				<option value="Cali">Cali</option>
+				<option value="Cartagena">Cartagena</option>
+				<option value="Medellin">Medellín</option>
+				<option value="Yopal">Yopal</option>
+
+			</select><br><br>
+            
+        <h3>Indicanos si eres cliente nuevo o antiguo</h3><br>
+
+			<input type="radio" name="cliente" value="Nuevo">&nbsp;&nbsp;&nbsp;Cliente Nuevo<br>
+			<input type="radio" name="cliente" value="Antiguo">&nbsp;&nbsp;&nbsp;Cliente Antiguo<br><br>
+			
+			
+        <h3>Cuanto tiempo vas a utilizar nuestros servicios</h3><br>
+			<select class="duracion" name="plan">
+			    <option value="seleccion">Seleccione...</option>
+				<option value="diario">Diario</option>
+				<option value="semanal">Semanal</option>
+				<option value="mensual">Mensual</option>
+				<option value="bimensual">Bimensual</option>
+				<option value="semestral">Semestral</option>
+				<option value="anual">Anual</option>
+
+			</select><br><br>
+			
+        <h3>¿Qué servicios deseas?</h3><br>
+			
+			<ul class="menul">	
+
+				<li><input type="checkbox" name="servicio[]" value="Zona de halterofilia">&nbsp;&nbsp;&nbsp;Zona de halterofilia</li>
+				<li><input type="checkbox" name="servicio[]" value="Zona cardiovascular">&nbsp;&nbsp;&nbsp;Zona cardiovascular</li>
+				<li><input type="checkbox" name="servicio[]" value="Zonas humedas">&nbsp;&nbsp;&nbsp;Zonas húmedas</li>
+				<li><input type="checkbox" name="servicio[]" value="Artes marciales mixtas">&nbsp;&nbsp;&nbsp;Artes marciales mixtas</li>
+				<li><input type="checkbox" name="servicio[]" value="Pilates">&nbsp;&nbsp;&nbsp;Pilates</li>
+				<li><input type="checkbox" name="servicio[]" value="Aerobicos">&nbsp;&nbsp;&nbsp;Aeróbicos</li>
+				<li><input type="checkbox" name="servicio[]" value="Boxing">&nbsp;&nbsp;&nbsp;Boxing</li>
+				<li><input type="checkbox" name="servicio[]" value="Sprint">&nbsp;&nbsp;&nbsp;Sprint</li>
+
+			</ul><br><br>
+
+			<input class="btn_cotiza" name="submit" type="submit" value="COTIZAR">
+		</form>
+
+	</div>
+	
+    </section>
+    
+    </main>
+    <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column--33">
+                   <h3 class="column__title">¿Por qué visitarnos?</h3>
+                   <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores nobis harum accusantium, magni autem, vel, vero, blanditiis recusandae ipsam commodi est explicabo impedit pariatur assumenda dignissimos. Necessitatibus odio, laboriosam?</p> 
+                </div>
+                <div class="column column--33">
+                   <h3 class="column__title">Contáctanos</h3>
+                   <p class="column__txt"><a href="" class="icon-ubicacion"></a>Av 68 N° 87 a 45</p> 
+                   <p class="column__txt"><a href="" class="icon-phone"></a>Teléfonos: 5788475 - 3215487965</p>
+                   <p class="column__txt"><a href="" class="icon-whatsapp">Whatsapp: 3215487965</a></p>  
+                   <p class="column__txt"><a href="" class="icon-mail"></a>consultas@gimnasiohealthybody.com.co</p> 
+                </div>
+                <div class="column column--33">
+                   <h3 class="column__title">Síguenos en nuestras redes sociales</h3>
+                   <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p> 
+                   <p class="column__txt"><a href="" class="icon-twitter">Síguenos en twitter</a></p> 
+                </div>
+                <p class="copy">© 2020 Gimnasio Healthy Body │ Todos los derechos reservados</p>
+            </div>
+        </footer>
+</body>
+</html>
